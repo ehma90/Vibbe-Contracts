@@ -1,0 +1,9 @@
+# Foundry build artifacts
+cache/
+out/
+
+# Environment / secrets — deployer private keys live here, never commit
+.env
+.env.local
+
+broadcast/*/*/run-latest.json
