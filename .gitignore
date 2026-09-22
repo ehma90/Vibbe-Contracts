@@ -6,4 +6,4 @@ out/
 .env
 .env.local
 
-broadcast/*/*/run-latest.json
+broadcast/
