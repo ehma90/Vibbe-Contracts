@@ -55,7 +55,7 @@ forge script script/Deploy.s.sol --rpc-url hyperevm_testnet --broadcast   # or h
 
 Both RPC aliases are defined in [`foundry.toml`](foundry.toml).
 
-**Gotcha:** HyperEVM testnet's block gas limit is only **3,000,000** — much lower than Ethereum's ~30M. `forge script` pads its gas estimate by ~30% by default, which can make a deployment look like it exceeds the limit (and report a misleading "failed" error) even when the real, unpadded gas requirement fits. If a deploy reports failure, check whether it actually landed on-chain (`cast code <address> --rpc-url ...`) before assuming it didn't — and if you need to retry cleanly, `--gas-estimate-multiplier 100` removes the padding.
+**Gotcha:** HyperEVM testnet's block gas limit is only **3,000,000** much lower than Ethereum's ~30M. `forge script` pads its gas estimate by ~30% by default, which can make a deployment look like it exceeds the limit (and report a misleading "failed" error) even when the real, unpadded gas requirement fits. If a deploy reports failure, check whether it actually landed on-chain (`cast code <address> --rpc-url ...`) before assuming it didn't and if you need to retry cleanly, `--gas-estimate-multiplier 100` removes the padding.
 
 After deploying, take the two printed addresses and update this README's deployments table, plus the consuming repos (next section).
 
