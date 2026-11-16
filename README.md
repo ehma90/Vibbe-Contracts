@@ -27,10 +27,10 @@ Paid minting for badges. A player who has unlocked a badge in the app mints it t
 
 ## Current deployments
 
-| Network | Chain ID | BadgeNFT | VBFToken |
-|---|---|---|---|
-| HyperEVM Testnet | 998 | [`0x4E308952F874f04fF53024065D5986Ce240C5e5a`](https://testnet.purrsec.com/address/0x4E308952F874f04fF53024065D5986Ce240C5e5a) | [`0x9a1e653a59BFF3ba50c5257AB2De6A1a01260FB3`](https://testnet.purrsec.com/address/0x9a1e653a59BFF3ba50c5257AB2De6A1a01260FB3) |
-| HyperEVM Mainnet | 999 | not yet deployed | not yet deployed |
+| Network | Chain ID | BadgeNFT | VBFToken | BadgeSale |
+|---|---|---|---|---|
+| HyperEVM Testnet | 998 | [`0x4E308952F874f04fF53024065D5986Ce240C5e5a`](https://testnet.purrsec.com/address/0x4E308952F874f04fF53024065D5986Ce240C5e5a) | [`0x9a1e653a59BFF3ba50c5257AB2De6A1a01260FB3`](https://testnet.purrsec.com/address/0x9a1e653a59BFF3ba50c5257AB2De6A1a01260FB3) | [`0x0cCcE8A09BAAc08E31dc32d54A9D3aF5c5a5dc4E`](https://testnet.purrsec.com/address/0x0cCcE8A09BAAc08E31dc32d54A9D3aF5c5a5dc4E) (2026-11-15; holds `MINTER_ROLE` on BadgeNFT) |
+| HyperEVM Mainnet | 999 | not yet deployed | not yet deployed | not yet deployed |
 
 Mainnet is intentionally not deployed yet — that's gated behind a contract review and moving the deployer/minter keys off plain env vars onto a KMS/custody-backed signer.
 
